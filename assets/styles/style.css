@@ -327,21 +327,59 @@ h1 {
 
 .slider {
     width: 600px;
-    height: 500px;
+    height: 400px;
     margin: 50px 0;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-}
-
-.slideBtn {
-    position: absolute;
+    border: 2px rgb(255, 255, 255) solid;
+    box-shadow: 0 3px 3px rgb(203, 203, 203);
 }
 
 .slide {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
+.miniSlide {
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 3px 3px rgb(203, 203, 203);
+}
 
+.backSlide {
+    right: 1000px;
+}
+
+.nextSlide {
+    left: 1000px;
+}
+
+.slideBtn {
+    position: absolute;
+    top: 50%;
+    padding: 10px 13px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color var(--time-animation);
+}
+
+.backBtn {
+    left: 25px;
+}
+
+.nextBtn {
+    right: 25px;
+}
+
+.slideBtn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+}
 
