@@ -10,6 +10,11 @@ html {
 body {
     font-family: Roboto, sans-serif;
     margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 0;
 }
 
 /* Стилізація меню навігації та header */
@@ -135,7 +140,7 @@ h1 {
 
 .sectionTitle {
     font-size: 1.4rem;
-    margin: 150px 0 40px;
+    margin: 120px 0 40px;
 }
 
 .sectionSubtitle {
@@ -144,14 +149,12 @@ h1 {
 }
 
 .wrapperCard {
-    margin: 70px 30px;
+    margin: 70px 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
 }
 
 .infoCard {
-    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +182,7 @@ h1 {
     grid-template-columns: 1fr 1.3fr; 
     align-items: start;
     gap: 30px;
-    padding: 150px 30px 80px;
+    padding: 120px 30px 80px;
     background-color: rgb(246, 246, 246);
 }
 
@@ -236,6 +239,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    padding: 0 30px;
 }
 
 .userCard {
@@ -323,16 +327,17 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .slider {
     width: 600px;
     height: 400px;
-    margin: 50px 0;
+    margin: 60px 0;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    border: 2px rgb(255, 255, 255) solid;
+    top: 40px;
     box-shadow: 0 3px 3px rgb(203, 203, 203);
 }
 
@@ -349,14 +354,15 @@ h1 {
     position: absolute;
     z-index: -1;
     box-shadow: 0 3px 3px rgb(203, 203, 203);
+    opacity: 0.5;
 }
 
 .backSlide {
-    right: 1000px;
+    left: 5%;
 }
 
 .nextSlide {
-    left: 1000px;
+    right: 5%;
 }
 
 .slideBtn {
@@ -365,6 +371,7 @@ h1 {
     padding: 10px 13px;
     border-radius: 50%;
     text-align: center;
+    font-size: 1.2rem;
     border: none;
     background-color: rgba(255, 255, 255, 0.5);
     transition: background-color var(--time-animation);
@@ -383,3 +390,94 @@ h1 {
     background-color: rgba(255, 255, 255, 1);
 }
 
+/* Стилізація 6-го розділу */
+
+.sect6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 30px;
+    padding: 100px 30px 100px;
+    background-color: rgb(246, 246, 246);
+}
+
+.sect6Info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sect6Info>.sectionTitle {
+    margin: initial;
+}
+
+.par {
+    text-align: initial;
+}
+
+/* Стилізація лінії прогресу */
+
+.barInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.barProgress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barText {
+    font-size: 1.05rem;
+    font-weight: 300;
+    align-self: flex-start;
+    margin-left: 15%;
+}
+
+.allBar {
+    width: 70%;
+    height: 30px;
+    margin: 10px 30px;
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 30px;
+    background-color: rgb(121, 120, 120);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-white-text);
+    font-weight: 500;
+}
+
+.bar1 {
+    width: 90%;
+}
+
+.bar2 {
+    width: 85%;
+}
+
+.bar3 {
+    width: 75%;
+}

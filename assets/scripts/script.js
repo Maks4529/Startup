@@ -43,12 +43,7 @@ slideImg.alt = slides[countIndex].alt;
 
 const [backSlide, nextSlide] = document.querySelectorAll('.miniSlide');
 
-backSlide.src = slides[countIndBack].src;
-backSlide.alt = slides[countIndBack].alt;
-nextSlide.src = slides[countIndNext].src;
-nextSlide.alt = slides[countIndNext].alt;
-
-
+setMiniSlides();
 
 const [backBtn, nextBtn] = document.querySelectorAll('.slideBtn');
 
@@ -86,10 +81,7 @@ function backMiniSlide (event){
         countIndNext = countIndBack + 2;
     }
 
-    backSlide.src = slides[countIndBack].src;
-    backSlide.alt = slides[countIndBack].alt;
-    nextSlide.src = slides[countIndNext].src;
-    nextSlide.alt = slides[countIndNext].alt;
+    setMiniSlides();
 };
 
 function nextMiniSlide (event){
@@ -104,11 +96,15 @@ function nextMiniSlide (event){
         ++countIndNext;
     }
 
+    setMiniSlides();
+};
+
+function setMiniSlides (){
     backSlide.src = slides[countIndBack].src;
     backSlide.alt = slides[countIndBack].alt;
     nextSlide.src = slides[countIndNext].src;
     nextSlide.alt = slides[countIndNext].alt;
-};
+}
 
 backBtn.addEventListener('click', () => {
     toBackSlide();
