@@ -95,7 +95,7 @@
                         <p class="userInfo arcicleInfo">
                             Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
                         </p>
-                        <div class="linkBtn"><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></div>
+                        <div class="linkBtn"><a href="#Contact"><i class="fa-solid fa-envelope"></i> Contact</a></div>
                     </div>
                 </div>
                 <div class="userCard">
@@ -106,7 +106,7 @@
                         <p class="userInfo arcicleInfo">
                             Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
                         </p>
-                        <div class="linkBtn"><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></div>
+                        <div class="linkBtn"><a href="#Contact"><i class="fa-solid fa-envelope"></i> Contact</a></div>
                     </div>
                 </div>
                 <div class="userCard">
@@ -117,7 +117,7 @@
                         <p class="userInfo arcicleInfo">
                             Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
                         </p>
-                        <div class="linkBtn"><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></div>
+                        <div class="linkBtn"><a href="#Contact"><i class="fa-solid fa-envelope"></i> Contact</a></div>
                     </div>
                 </div>
                 <div class="userCard">
@@ -128,7 +128,7 @@
                         <p class="userInfo arcicleInfo">
                             Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
                         </p>
-                        <div class="linkBtn"><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></div>
+                        <div class="linkBtn"><a href="#Contact"><i class="fa-solid fa-envelope"></i> Contact</a></div>
                     </div>
                 </div>
             </div>
@@ -214,7 +214,7 @@
                         </span>
                     </div>
                     <div class="payBtn">
-                        <a href="#" class="linkBtn">Pay</a>
+                        <a href="/assets/pages/orderPage.html" target="_blank" class="linkBtn">Pay</a>
                     </div>
                 </article>
                 <article class="priceItem pricePro">
@@ -230,7 +230,7 @@
                         </span>
                     </div>
                     <div class="payBtn">
-                        <a href="#" class="linkBtn">Pay</a>
+                        <a href="/assets/pages/orderPage.html" target="_blank" class="linkBtn">Pay</a>
                     </div>
                 </article>
                 <article class="priceItem pricePremium">
@@ -246,11 +246,60 @@
                         </span>
                     </div>
                     <div class="payBtn">
-                        <a href="#" class="linkBtn">Pay</a>
+                        <a href="/assets/pages/orderPage.html" taret="_blank" class="linkBtn">Pay</a>
                     </div>
                 </article>
             </article>
         </section>
+        <section class="sect8" id="Contact">
+            <h2 class="sectionTitle">CONTACTS</h2>
+            <div class="sectionSubtitle">Send Your Message</div>
+            <div class="sect8Content">
+                <form action="#" class="sendMessage">
+                    <label class="firstName">
+                        <span class="labelTitle">Your Name*</span>
+                        <input type="text" name="firstName" placeholder="Name.." required pattern="[A-Z][a-z]{1,19}(-[A-Z][a-z]{1,19})?">
+                    </label>
+                    <label class="lastName">
+                        <span class="labelTitle">Your Lastname</span>
+                        <input type="text" name="lastName" placeholder="Lastname.." pattern="[A-Z][a-z]{1,19}(-[A-Z][a-z]{1,19})?">
+                    </label>
+                    <label class="email">
+                        <span class="labelTitle">Email*</span>
+                        <input type="email" name="email" placeholder="Your@email" required>
+                    </label>
+                    <label class="phone">
+                        <span class="labelTitle">Phone</span>
+                        <div class="fullNumber">
+                            <select name="numberCode">
+                                <option value="+380">+380</option>
+                                <option value="+975">+975</option>
+                                <option value="+450">+450</option>
+                            </select>
+                            <input type="tel" name="phone" placeholder="987654321" pattern="\d{9}">
+                        </div>
+                    </label>
+                    <label class="message">
+                        <span class="labelTitle">Message</span>
+                        <textarea name="message" placeholder="Your message.."></textarea>
+                    </label>
+                    <div class="formBtn">
+                        <button type="submit" class="submitBtn">SEND MESSAGE</button>
+                        <a href="#" class="loginLink">LOGIN</a>
+                    </div>
+                </form>
+                <div class="sect8Info">
+                    Send your messages and we will definitely answer you as soon as possible.
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <ul class="footerLink">
+            <li><a href="#">More Info</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
