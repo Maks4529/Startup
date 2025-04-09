@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white-text: rgb(255, 255, 255);
+  --time-animation: 0.3s;
+  --font-size-sectTitle: 1.4rem;
+  --font-size-sectSubTitle: 1.2rem;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 0;
+}
